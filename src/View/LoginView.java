@@ -60,6 +60,11 @@ public class LoginView extends javax.swing.JFrame {
         TxtPassword.setBackground(new java.awt.Color(255, 255, 255));
         TxtPassword.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         TxtPassword.setForeground(new java.awt.Color(0, 0, 0));
+        TxtPassword.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TxtPasswordActionPerformed(evt);
+            }
+        });
         jPanel1.add(TxtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, 210, 35));
 
         btnEnter.setBackground(new java.awt.Color(255, 255, 255));
@@ -81,6 +86,10 @@ public class LoginView extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void TxtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtPasswordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtPasswordActionPerformed
 
    
     public static void main(String args[]) {
